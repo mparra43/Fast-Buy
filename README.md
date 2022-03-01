@@ -39,3 +39,12 @@ Solicitud : para acceder a este servicio será necesario que el funcionario se e
 POST(http://localhost:${PORT}/orders/addNewOrder) </br>
 Función : este servicio sirve para agregar una nueva orden y facturar un nuevo pedido no es necesario estar logueado con el fin que los clientes desde la aplicación web pueda gestionar su compra de forma fácil y rápida identificado la orden generada por la tienda web, si la orden es generada por los asesores presenciales  de la compañía  registrara la orden con su nombre con el fin de gestionar las ventas y datos relevantes correlacionados con el personal de ventas. </br>
 Solicitud : para acceder a este servicio será necesario enviar los siguientes datos el nombre, identificación, dirección del cliente y los productos seleccionados por el mismo. </br>
+
+## Servicios para la gestión de los productos  </br>
+GET(http://localhost:${PORT}/products/allProduct)  </br>
+Función : este servicio sirve para  traer todos los productos , si se le envía por query  la categoria de la solicitud  traerá todas la que coincida con esa categoría.  </br>
+
+POST(http://localhost:${PORT}/products/addNewProduct)  </br>
+Función: este servicio sirve para agregar un nuevo producto al catálogo.  </br>
+Solicitud: para acceder a este servicio será necesario  tener el rol de ADMIN_ROLE  y estar autenticado , además enviar los siguientes datos el nombre , unidades disponibles , con el fin de gestionar el inventario , precio al público, descuento , categoría y admin que será un  objeto con el email con el fin de controlar quien puede agregar productos al catalogo de la compañía  </br>
+
