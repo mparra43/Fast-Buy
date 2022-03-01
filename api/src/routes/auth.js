@@ -18,7 +18,7 @@ router.post(
         check('password', 'Password is required').isLength({ min: 8 }),
         check('rol', 'Rol is required').not().isEmpty(),
         check('admin', 'Admin is required').not().isEmpty(),
-        validateInput
+        validateInput,  validateJwt,
     ],
     createAssessor);
 
