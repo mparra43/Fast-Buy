@@ -16,7 +16,7 @@ Las rutas dependerán de la variable que asigne en la variable PORT en el archiv
 ## Servicios de Autenticación 
 
 POST(http://localhost:${PORT}/auth/new) 
-Función : este servicio sirve para agregar un empleado a la base de datos y de acuerdo al rol que se le asigne tendrá ciertos accesos ,
+Función : este servicio sirve para agregar un empleado a la base de datos y de acuerdo al rol que se le asigne tendrá ciertos accesos. </br>
 Solicitud : para acceder a este servicio será necesario que el usuario este logueado, y su rol sea de ADMIN_ROLE ,  adicionalmente debe enviar en la solicitud los campos de name , email, password y rol del nuevo funcionario de la compañía , además se deberá enviar un objeto llamado admin con la propiedad email 
 POST(http://localhost:${PORT}/auth/login) 
 Función : este servicio sirve para autenticar a los distintos funcionarios de la compañía y puedan acceder a las funcionales que correspondan a su cargo,
