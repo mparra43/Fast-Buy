@@ -9,11 +9,11 @@ Para ejecutar el proyecto es necesario crear un la raíz de la carpeta api un ar
 Con el comando ## `npm run dev` ubicado en la carpeta api  dentro del proyecto podrá correr el proyecto 
 
 
-##Rutas 
+## Rutas 
 Las rutas dependerán de la variable que asigne en la variable PORT en el archivo . env , por ejemplo (http://localhost:${PORT}), o (http://localhost:3001) el cual será la base de los servicios disponibles 
 
 
-##Servicios de Autenticación 
+## Servicios de Autenticación 
 
 POST(http://localhost:${PORT}/auth/new) 
 Función : este servicio sirve para agregar un empleado a la base de datos y de acuerdo al rol que se le asigne tendrá ciertos accesos ,
@@ -25,7 +25,7 @@ Solicitud : para acceder a este servicio será necesario enviar email y la passw
 GET(http://localhost:${PORT}/auth/renew) 
 Función : este servicio sirve para renovar el token de autenticación
 
-##Servicios para el manejo de ordenes 
+## Servicios para el manejo de ordenes 
 
 GET(http://localhost:${PORT}/orders/allOrders) 
 Función : este servicio sirve para  traer todas las ordenes , si se le envía por query  el estado de la solicitud  traerá todas la que coincida con ese estado,
